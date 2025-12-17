@@ -1,0 +1,27 @@
+pruning_modifiers:
+      - !GMPruningModifier
+        start_epoch: 0
+        end_epoch: 35
+        update_frequency: 1.0
+        init_sparsity: 0.0
+        final_sparsity: 0.9
+        mask_type: unstructured
+        params: ["fc1.weight"]
+
+      - !GMPruningModifier
+        start_epoch: 0
+        end_epoch: 35
+        update_frequency: 1.0
+        init_sparsity: 0.0
+        final_sparsity: 0.9
+        mask_type: unstructured
+        params: ["fc2.weight"]
+
+      - !GMPruningModifier
+        start_epoch: 0
+        end_epoch: 35
+        update_frequency: 1.0
+        init_sparsity: 0.0
+        final_sparsity: 0.9
+        mask_type: unstructured
+        params: ["fc3.weight"]
